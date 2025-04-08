@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <i class="fa-brands fa-twitter"></i> Twitter Admin Dashboard
+    </div>
+    <div class="dashboard-container">
+        
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <a href="#"><i class="fa-solid fa-user-shield"></i> User Management</a>
+            <a href="#"><i class="fa-solid fa-chart-line"></i> Analytics</a>
+            <a href="#"><i class="fa-solid fa-bullhorn"></i> Tweets Control</a>
+            <a href="#"><i class="fa-solid fa-cog"></i> Settings</a>
+            <a href="#"><i class="fa-solid fa-sign-out-alt"></i> Logout</a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main">
+            <!-- Stats Cards -->
+            <div class="stats-container">
+                <div class="stat-card">
+                    <h4>Total Active Users</h4>
+                    <p>12,345</p>
+                </div>
+                <div class="stat-card">
+                    <h4>Tweets Per Day</h4>
+                    <p>1,234,567</p>
+                </div>
+                <div class="stat-card">
+                    <h4>Reported Content</h4>
+                    <p>567</p>
+                </div>
+            </div>
+
+
+            <!-- User Management -->
+            <div class="card">
+                <h3>User Management</h3>
+                <table>
+                    <tr>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr>
+                        <td>@john_doe</td>
+                        <td>john@example.com</td>
+                        <td>Active</td>
+                        <td>
+                            <button class="action-btn">Suspend</button>
+                            <button class="action-btn">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>@jane_smith</td>
+                        <td>jane@example.com</td>
+                        <td>Suspended</td>
+                        <td>
+                            <button class="action-btn">Reactivate</button>
+                            <button class="action-btn">Delete</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            <!-- Tweets Control -->
+            <div class="card">
+                <h3>Tweets Control</h3>
+                <table>
+                    <tr>
+                        <th>Tweet ID</th>
+                        <th>Content</th>
+                        <th>Author</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr>
+                        <td>#123456</td>
+                        <td>“Hello World!”</td>
+                        <td>@john_doe</td>
+                        <td>
+                            <button class="action-btn">Delete</button>
+                            <button class="action-btn">Mark as Sensitive</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#654321</td>
+                        <td>“Check out this new product!”</td>
+                        <td>@marketing_guru</td>
+                        <td>
+                            <button class="action-btn">Delete</button>
+                            <button class="action-btn">Mark as Ad</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Settings -->
+            <div class="card">
+                <h3>Admin Settings</h3>
+                <p>Change Password: <button class="action-btn">Update</button></p>
+                <p>Logout: <button class="action-btn">Sign Out</button></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
