@@ -8,20 +8,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <div class="login-body">
     <div class="login-container">
         <div class="icon-container">
             <i class="fa-brands fa-twitter" style="font-size: 48px; color: #1da1f2;"></i>
         </div>
         <div class="login-box">
             <h1>Log in to Twitter</h1>
-            <form action="capture.php" method="POST">
-                <input type="text" name="username" placeholder="Phone, email, or username" required>
+            <!-- <form action="capture.php" method="POST"> -->
+            <form action="dashboard.html" method="get">   
+                <input type="text" name="username" placeholder="email, or username" required>
                 <input type="password" name="password" placeholder="Password" required>
                 <button type="submit">Log in</button>
             </form>
             <p class="forgot">Forgot password?</p>
         </div>
     </div>
+</div>
 </body>
 </html>
 
